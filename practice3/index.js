@@ -77,8 +77,8 @@ console.log(">>>>>>");
 
 // bad programmer write code which machine understand only
 // good programmer write human redable code with documentation
-// 6. function to find element occuerance in the give array
 
+// 6. function to find element occuerance in the give array
 function find_element_repetition(given_array, element) {
     let count = 0;
     for(let i=0; i < given_array.length; i++){
@@ -131,6 +131,7 @@ console.log(reverse_a_string_using_list("rajat"))
 
 
 // is palandromium  its a word that represnt same from left to right
+
 
 
 function is_palandromium (string_name) {
