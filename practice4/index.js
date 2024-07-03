@@ -1,16 +1,25 @@
-// check all Data types to check the conditions
+//  check the conditions of all Data types
 
 // 1. string
 let string = "Ashish";
-if(typeof string === "string"){
-    console.log("'Ashish' : this is string data type");
+
+// a. typeof
+let typeof_string = (typeof string === "string")
+if(typeof_string){
+    console.log("this is string :",typeof_string);
 }
 
-let str =  (string.length == 8)
-console.log("this is the length of string is eight", str);
+// b. length
+let str_lenght =  (string.length == 6)
+console.log("length of string is eight", string, string.length, ": ", str_lenght);
 
-let str1 = string.toUpperCase()
-console.log(str1);
+//c. convert to toUpperCase
+let str1 = "ashish"
+let strrrr = (string.toUpperCase === str1)
+if(strrrr){
+    console.log(strrrr, "dhfdsfhdsjfh");
+}
+console.log("////////////");
 
 
 test_string_one = "RajaT"  
@@ -37,6 +46,8 @@ let str6 = string.substring(0,4)
 console.log(str6);
 console.log("<<<<<<<<<<<<------>>>>>>>>>>>");
 
+
+
 // 2. array
 let array = [1,2,3,4,5,6,7,8]
 if(Array.isArray(array)){
@@ -45,5 +56,15 @@ if(Array.isArray(array)){
 
 let arr1 = array.length
 console.log(arr1);
+console.log("dsssssss");
 
-
+let is_string = function(input){
+    if (Object.prototype.toString.call(input) === '[object string]'){
+        return true;
+    }else{
+        return false;
+    }
+}
+console.log(is_string('ashi'));
+console.log(is_string([1,2,3,4]));
+console.log("dsssssss");
