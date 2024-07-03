@@ -1,7 +1,7 @@
 //  check the conditions of all Data types
 
 // 1. string
-let string = "Ashish Bhardwaj";
+let string = "Ashish Bhardwaj   ";
 
 // a. typeof
 let typeof_string = (typeof string === "string")
@@ -53,32 +53,21 @@ console.log("<<<<<<<<<<<<------>>>>>>>>>>>");
 
 
 // 2. array
+// a.to find its array or not
 let array = [1,2,3,4,5,6,7,8]
 if(Array.isArray(array)){
       console.log("this is array type");
 }
+console.log(Array.isArray(array));
 
-let arr1 = array.length
-console.log(arr1);
-console.log("dsssssss");
-
-let is_string = function(input){
-    if (Object.prototype.toString.call(input) === '[object string]'){
-        return true;
-    }else{
-        return false;
-    }
+// b. length
+let arr_length = (array.length === 8)
+if(arr_length){
+    console.log("is this length of array", arr_length);
 }
-console.log(is_string('ashi'));
-console.log(is_string([1,2,3,4]));
-console.log("dsssssss");
 
-
-
-let truncate_string = function(string){
-    if(string.constructor === string){
-        return string.slice(0)
-    }
+// c. clone the array
+let array_to_String = array.toString()
+if(array_to_String){
+    console.log("array to string: ", array_to_String);
 }
-let fall = truncate_string(string)
-console.log(fall);
