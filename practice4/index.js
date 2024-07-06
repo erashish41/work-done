@@ -250,3 +250,110 @@ function get_product_by_title_contains(title_name, data){
     get_product_by_title_contains("Food", data)
   })
 
+  
+
+  console.log("<<<<<<..>>>>>");
+
+  // Promise
+  const promiseOne = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        console.log("I am a progfgfgfmise");
+    resolve();                   //by the help of this we can connect then & resolve
+    }, 2000);
+  });
+
+//   then is directly connected with resolve
+promiseOne.then(function(){
+    console.log("promise consumed");
+})
+
+
+// // Callback Hell 
+// // function getData(dataId){
+// //     setTimeout(() => {
+// //         console.log("data", dataId);
+
+// //     }, 2000);
+// // }
+
+// // if we want to take data after 2 sec 
+// function getData(dataId, getNextData){
+//     setTimeout(() => {
+//         console.log("data", dataId);
+//         if(getNextData){
+//             getNextData()
+//         }
+//     }, 2000);
+// }
+
+// getData(1, () => {
+//     getData(2, () =>{
+//         getData(3,() => {
+//             getData(4);
+//         })
+//     })
+// })
+
+
+
+
+
+
+//  <<<<<<<<<<<<<<<...........>>>>>>>>>>>>>>>
+// 1.
+let value = null;
+
+if (value === null) {
+  console.log("The value is null");
+} else {
+  console.log("The value is not null");
+}
+
+// 2.
+let condition = true; // This is a boolean condition
+
+if (condition) {
+    console.log("The condition is true");
+} else {
+    console.log("The condition is false");
+}
+
+// 3.
+let number1 = 10;
+
+if (number1 > 0) {
+  console.log("The number is positive.");
+} else if (number1 < 0) {
+  console.log("The number is negative.");
+} else {
+  console.log("The number is zero.");
+}
+
+// 4.
+let text = "Hello, world!";
+
+if (text.includes("world")) {
+    console.log("The text contains 'world'.");
+} else if (text.startsWith("Hello")) {
+    console.log("The text starts with 'Hello'.");
+} else if (text.endsWith("!")) {
+    console.log("The text ends with '!'.");
+} else {
+    console.log("The text doesn't match any conditions.");
+}
+
+// 5.
+let numbers = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+        console.log(numbers[i] + " is even");
+    } else {
+        console.log(numbers[i] + " is odd");
+    }
+}
+
+//  to fetch the data
+fetch("https://dummyjson.com/products")
+    .then((res) => res.json() )
+    .then((data) => console.log(data))
