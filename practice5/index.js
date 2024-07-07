@@ -65,7 +65,7 @@ if(num > 0){
 }
 
 // 6. to calculates the ticket price based on age
-// why we did't make functio
+// why we did't make function
 let age = 30;
 let ticketFare;
 if(age < 12){
@@ -119,7 +119,7 @@ console.log('>>>> 17 + 21 :', sum(17,21))
 // });
 
 
-// to find the password with for loops
+// to find the password by using for loops
 let password = 768;
 for (let index_one = 0; index_one < 10; index_one++) {
     for (let index_two = 0; index_two < 10; index_two++) {
