@@ -1,3 +1,4 @@
+//                                  E X A M P L E S
 // 1. detials of product using Object
 const product = {
     productName : "Parker Jotter Standard",
