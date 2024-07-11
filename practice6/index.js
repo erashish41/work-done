@@ -4,6 +4,7 @@ if( numberBe > 0){
     console.log(`number is even ${numberBe}`);
 }else{
     console.log(`number is negative ${numberBe}`);
+    // console.log('number is negative ', numberBe);
 }
 
 // with function
@@ -24,7 +25,7 @@ const checkNumberwithArrowFunction = (digit)  => {
                 console.log(`number is negative ${digit}`);
             }
         }
-        checkNumberwithArrowFunction(2231)
+ checkNumberwithArrowFunction(2231)
 
 
 
@@ -127,7 +128,7 @@ console.log(`grade of studend is : ${grade}`);
 
 // 5. Write a program that determines if a year is a leap year.
 const year = 2024;
-if (year % 4 === 0 && year % 100 ===0 || (year % 400 === 0)){
+if (year % 4 === 0 && year % 100 === 0 || (year % 400 === 0)){
     console.log(year + " is a leap year.");
 } else {
   console.log(year + " is not a leap year.");
@@ -236,3 +237,27 @@ const addArray = array.reduce((acc, curr) => {
     return acc
 })
 console.log(addArray);
+
+// Conditional Breakpoints
+function calculateSum(a, b) {
+    let sum = a + b;
+    return sum;
+}
+
+for (let i = 0; i < 10; i++) {
+    let result = calculateSum(i, 50 );
+    console.log(result);
+}
+
+// more complex
+function multiply(a, b) {
+    return a * b;
+}
+
+function calculateArea(length, width) {
+    let area = multiply(length, width);
+    return area;
+}
+
+let area = calculateArea(5, 4);
+console.log(area);
