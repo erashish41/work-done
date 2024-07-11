@@ -31,6 +31,7 @@ console.log(typeof profile["isFollowing"]);
 //     console.log(userInput, " : number do not relates to 5");
 // }
 
+
 // 4.studend scoreCard with their codes
 let scoreNum = 76;
 let grade;
