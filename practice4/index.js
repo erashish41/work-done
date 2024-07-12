@@ -1,7 +1,13 @@
 //  check the conditions of all Data types
 
+
+
 // 1. string
 let string = "Ashish Bhardwaj";
+let strChar = string.charAt(8)
+console.log(strChar);
+console.log(string);
+console.log(">>>>>>>>>>");
 
 // a. typeof
 let typeof_string = (typeof string === "string")
@@ -15,11 +21,11 @@ console.log("length of string is eight", string, string.length, ": ", str_lenght
 
 // c. convert to toUpperCase
 // let string = "Ashish";
-let test_str1 = "ashish"
+let test_str1 = "ashish bhardwaj"
 console.log(string.toLowerCase() === test_str1,"this for upper case");
 
 let str2 = string.toLowerCase()
-console.log(str2);
+console.log(str2, str2 === test_str1);
 
 // d. find the start and end of string
 let string_starts = string.startsWith("As") 
@@ -28,12 +34,23 @@ console.log(string_starts,"this is for start of string");
 let string_ends = string.endsWith("sh")
 console.log(string_ends,"this is for end of string");
 
+// ------------------
+let str = "Hello, World! Welcome to JavaScript.";
+let wordsArray = str.split("-"); // Split by spaces
+console.log(wordsArray);
+
+var numb = '18.8jhsdfdfdskl';
+var integer = parseFloat(numb);
+console.log(integer)
+
+//  ---------------
+
 // e. split a string and convert it into an array 
 // let string = "Ashish";
 let string_to_array = function (e){
     return e.trim().split(" ")
 } 
-let converted_string = string_to_array(string)
+let converted_string = string_to_array(string)      // passing string as an argument
 console.log(converted_string," : string to array");
 
 // f. to extract a specified number of characters from a string
