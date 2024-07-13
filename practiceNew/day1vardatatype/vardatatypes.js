@@ -62,7 +62,7 @@ delete object1.location
 console.log(object1);
 console.log(object1.constructor.name);
 
-// means we can assign the value to empty object by ourself also
+//means we can assign the value to empty object by ourself also
 let obj = {}
 obj.person = "Ashish";
 obj.position = "coding";
