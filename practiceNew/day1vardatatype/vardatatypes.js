@@ -60,8 +60,6 @@ object1.location = "Gurugram";
 console.log(object1);
 delete object1.location
 console.log(object1);
-
-
 console.log(object1.constructor.name);
 
 // means we can assign the value to empty object by ourself also
