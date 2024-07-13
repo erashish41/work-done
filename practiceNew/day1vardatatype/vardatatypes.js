@@ -7,7 +7,7 @@ console.log(number);
 let string = "Ashish";
 console.log(string);
 
-// b. Constant Declaration
+// b. Constant Declaration.
 // 1. declare vaiable using constant, assign boolean and log the value
 const boolean = true;
 console.log(true);
