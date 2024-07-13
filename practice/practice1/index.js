@@ -13,13 +13,13 @@ console.log(randomElement);
 // to find the data how much time 1 word is written
 let car_info = { };
 for(let i = 0; i < cars.length; i++){
-    let i_data = cars[i];
-
+    let i_data = cars[i];     
+    // this means carsInfo is "Saab". "Saab" is not in carsData, so carsData["Saab"] is set to 1.
     if(car_info.hasOwnProperty(i_data)){
         car_info[i_data] += 1;
     }else{
         car_info[i_data] = 1;
-    }
+    }   
 }
 console.log("<<<<<<");
 console.log(car_info);
@@ -54,14 +54,14 @@ for(let i=0; i<number.length; i++){
 }
 console.log(minNum);
 
-// find the min number from series
-let minNum1 = number[0]
+// find the max number from series
+let maxNum1 = number[0]
 for(let i=0; i<number.length; i++){
-    if(number[i] > minNum){
-        minNum1 = number[i]
+    if(number[i] > maxNum1){    // If number[i] is greater than max, max is updated to number[i]
+        maxNum1 = number[i]
     }
 }
-console.log(minNum1);
+console.log(maxNum1);
 
 // even and odd number
 const arr = [1,2,4,5,6,0,9,0,51,6,90,5,6,7,88]
@@ -75,8 +75,8 @@ console.log(oddNum);
 // other method 
 const number_series = [2,6,3,2,1,0,51,6,90,5,6,7,88]
 
-even_results = []
-odd_results = []
+even_results = [];
+odd_results = [];
 for( let i = 0; i < number_series.length; i++){
     current_item = number_series[i]
 

@@ -17,3 +17,16 @@ function greet(user){           // here function accept the value
 let user = "Ashish";
 let str111 = greet(user);      // here we pass the value 
 console.log(str111);
+
+const cars = ["Saab", "Saab", "Volvo", "Volvo", "Volvo", "BMW", "BMW", "BMW", "BMW"];
+let carsData = { };
+for(i=0; i<cars.length; i++){
+    const carsInfo = cars[i];   // this mesn
+
+    if(carsData.hasOwnProperty(carsInfo)){
+        carsData[carsInfo] += 1;
+    }else{
+        carsData[carsInfo] = 1;
+    }
+}
+console.log(carsData);
