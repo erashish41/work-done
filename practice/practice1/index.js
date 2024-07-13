@@ -1,4 +1,14 @@
-const cars = ["Saab", "Saab", "Volvo", "Volvo", "Volvo", "BMW", "BMW", "BMW","BMW"]
+//      A R R A Y
+
+const cars = ["Saab", "Saab", "Volvo", "Volvo", "Volvo", "BMW", "BMW", "BMW", "BMW"];
+const randomIndex = Math.floor(Math.random() * cars.length);
+const randomElement = cars[randomIndex];
+console.log(randomElement);
+
+// const cars = ["Saab", "Saab", "Volvo", "Volvo", "Volvo", "BMW", "BMW", "BMW", "BMW"];
+// const firstCar = cars[2];
+// const firstWord = firstCar.split(' ')[7];
+// console.log(firstWord);
 
 // to find the data how much time 1 word is written
 let car_info = { };
